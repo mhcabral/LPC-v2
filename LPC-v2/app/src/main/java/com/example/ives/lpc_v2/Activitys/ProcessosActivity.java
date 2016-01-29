@@ -24,8 +24,12 @@ import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +42,7 @@ public class ProcessosActivity extends AppCompatActivity
     private ListView lstProcessos;
     private Context context;
     private List<ListProcessoItem> itens;
+    private String line1 = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -285,10 +290,34 @@ public class ProcessosActivity extends AppCompatActivity
         return null;
     }
 
+    public void lerArquivo(){
+        Log.i("ScriptRead", "Tentando ler arquivo");
+        try {
+            FileInputStream fileis = new FileInputStream("/storage/extSdCard/teste/LPC-BD1.txt");
+            InputStreamReader instream = new InputStreamReader(fileis);
+            BufferedReader buffreader = new BufferedReader(instream);
+            String line;
+            while((line = buffreader.readLine()) != null){
+                line1+= line;
+            }
+            Log.i("ScriptRead", line1.toString());
+            fileis.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void salvaArquivo(){
         Log.i("ScriptSave", "Tentando salvar arquivo");
         try {
             FileOutputStream fileos = new FileOutputStream("/storage/extSdCard/teste/LPC-BD1.txt");
+            Log.i("ScriptSave", BD.getLine1().toString());
+            if(!BD.getLine1().equals("")) {
+                fileos.write(BD.getLine1().toString().getBytes());
+                fileos.write("\n\n".getBytes());
+            }
             for (int i = 0; i < BD.getList_casos_buscados().size(); i++) {
                 Log.i("ScriptSave",BD.getList_casos_buscados().get(i).toString());
                 fileos.write(BD.getList_casos_buscados().get(i).toString().getBytes());

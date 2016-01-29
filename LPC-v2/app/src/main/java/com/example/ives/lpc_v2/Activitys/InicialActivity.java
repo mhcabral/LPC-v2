@@ -40,7 +40,6 @@ public class InicialActivity extends AppCompatActivity {
     private Drawer drawer;
     private AccountHeader header;
     private ListView lstProcessos;
-    private String line1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,8 +141,8 @@ public class InicialActivity extends AppCompatActivity {
     {
         // Inicializa o Banco de Dados do Aplicativo
         BD.initInstance();
-        //lerArquivo();
-        cria_exemplos();
+        lerArquivo();
+        //cria_exemplos();
     }
 
     private void cria_exemplos() {
@@ -193,11 +192,10 @@ public class InicialActivity extends AppCompatActivity {
             InputStreamReader instream = new InputStreamReader(fileis);
             BufferedReader buffreader = new BufferedReader(instream);
             String line;
-            line1 = "";
             while((line = buffreader.readLine()) != null){
-                line1+= line;
+                BD.setLine1(BD.getLine1()+ line);
             }
-            Log.i("ScriptRead", line1.toString());
+            Log.i("ScriptRead", BD.getLine1().toString());
             fileis.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -210,8 +208,11 @@ public class InicialActivity extends AppCompatActivity {
         Log.i("ScriptSave", "Tentando salvar arquivo");
         try {
             FileOutputStream fileos = new FileOutputStream("/storage/extSdCard/teste/LPC-BD1.txt");
-            fileos.write(line1.getBytes());
-            fileos.write("\n\n".getBytes());
+            Log.i("ScriptSave", BD.getLine1().toString());
+            if(!BD.getLine1().equals("")) {
+                fileos.write(BD.getLine1().toString().getBytes());
+                fileos.write("\n\n".getBytes());
+            }
             for (int i = 0; i < BD.getList_casos_buscados().size(); i++) {
                 Log.i("ScriptSave",BD.getList_casos_buscados().get(i).toString());
                 fileos.write(BD.getList_casos_buscados().get(i).toString().getBytes());

@@ -21,6 +21,7 @@ public class BD {
     private static Atendimento atendimento_selecionado;
     private static Visita visita_selecionada;
     private static boolean cria_ex;
+    private static String line1;
 
     public static void initInstance() {
         if (instance == null) {
@@ -36,6 +37,7 @@ public class BD {
             crianca_selecionada = null;
             atendimento_selecionado = null;
             visita_selecionada = null;
+            line1 = "";
         }
     }
 
@@ -178,5 +180,13 @@ public class BD {
 
     public static void setCria_ex(boolean cria_ex) {
         BD.cria_ex = cria_ex;
+    }
+
+    public static String getLine1() {
+        return line1;
+    }
+
+    public static void setLine1(String line1) {
+        BD.line1 = line1;
     }
 }

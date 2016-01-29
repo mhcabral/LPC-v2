@@ -5,5 +5,17 @@
         <item>@string/item_assunto_guarda</item>
         <item>@string/item_assunto_pensao</item>
         <item>@string/item_assunto_Mudança_de_guarda</item>
+        <item>@string/item_assunto_anulacao</item>
+        <item>@string/item_assunto_inv_paternidade</item>
+        <item>@string/item_assunto_inv_maternidade</item>
+        <item>@string/item_assunto_uniao</item>
     </string-array>
+    <string name="item_assunto_divorcio">Divórcio</string>
+    <string name="item_assunto_guarda">Guarda</string>
+    <string name="item_assunto_pensao">Pensão alimentícia</string>
+    <string name="item_assunto_Mudança_de_guarda">Mudança de Guarda</string>
+    <string name="item_assunto_anulacao">Anulação de Casamento</string>
+    <string name="item_assunto_inv_paternidade">Investigação de Paternidade</string>
+    <string name="item_assunto_inv_maternidade">Investigação de Maternidade</string>
+    <string name="item_assunto_uniao">União Estavel</string>
 </resources>

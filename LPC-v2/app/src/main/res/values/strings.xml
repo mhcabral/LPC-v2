@@ -17,10 +17,6 @@
     <!-- Novo Processo -->
     <string name="title_activity_novo_processo">Novo Caso</string>
     <string name="edt_num_processo_hint">Número do Processo</string>
-    <string name="item_assunto_divorcio">Divórcio</string>
-    <string name="item_assunto_guarda">Guarda</string>
-    <string name="item_assunto_pensao">Pensão alimentícia</string>
-    <string name="item_assunto_Mudança_de_guarda">Mudança de Guarda</string>
     <string name="edt_interessado_hint">Interessado</string>
     <string name="txt_assunto">Assunto:</string>
     <string name="radio_interessado">Interessado</string>
