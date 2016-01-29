@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAssunto"
+        android:textSize="20sp"
+        style="@style/textStyle" />
+
+    <TextView
+        android:id="@+id/txtDHAudiInicial"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        style="@style/textStyle"/>
+
+    <TextView
+        android:id="@+id/txtDHAudieFinal"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        style="@style/textStyle"/>
+
+    <ListView
+        android:id="@+id/lstInteressado"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

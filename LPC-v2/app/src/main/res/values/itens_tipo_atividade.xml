@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itens_tipo_atividade">
+        <item>@string/item_tipo_atividade_atendimento</item>
+        <item>@string/item_tipo_atividade_visita</item>
+    </string-array>
+</resources>

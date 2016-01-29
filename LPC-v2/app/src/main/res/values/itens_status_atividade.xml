@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itens_status_atividade">
+        <item>@string/item_status_atividade_aberto</item>
+        <item>@string/item_status_atividade_finalizado</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        style="@style/editTextStyle"/>
+
+    <EditText
+        android:id="@+id/edtEndereco"
+        android:hint="@string/edt_endereco"
+        android:layout_marginTop="16dp"
+        style="@style/editTextStyle"/>
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:hint="@string/edt_telefone"
+        android:layout_marginTop="16dp"
+        style="@style/editTextStyle"/>
+
+    <TextView
+        android:id="@+id/txtDataNascimento"
+        android:layout_marginTop="16dp"
+        style="@style/textStyle"/>
+
+    <Button
+        android:id="@+id/btnDataNascimento"
+        android:text="@string/btn_data_nascimento"
+        android:layout_marginTop="16dp"
+        style="@style/buttonStyle"/>
+
+    <Button
+        android:id="@+id/btnAtualizarI"
+        android:text="@string/btn_atualizar"
+        android:layout_marginTop="16dp"
+        style="@style/buttonStyle"/>
+
+    <Button
+        android:id="@+id/btnCancelarI"
+        android:text="@string/btn_cancelar"
+        android:layout_marginTop="16dp"
+        style="@style/buttonStyle"/>
+
+</LinearLayout>

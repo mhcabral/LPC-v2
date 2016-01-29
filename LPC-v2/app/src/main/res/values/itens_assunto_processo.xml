@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itens_assunto">
+        <item>@string/item_assunto_divorcio</item>
+        <item>@string/item_assunto_guarda</item>
+        <item>@string/item_assunto_pensao</item>
+        <item>@string/item_assunto_Mudança_de_guarda</item>
+    </string-array>
+</resources>

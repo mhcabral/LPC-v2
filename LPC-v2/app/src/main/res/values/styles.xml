@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="Theme.MyTheme" parent="MaterialDrawerTheme.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- linha da base de um EditText -->
+        <!-- <item name="android:colorControlNormal">@color/divider</item> -->
+
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/activityBackground</item>
+        <item name="material_drawer_primary_text">@color/primary_text</item>
+        <!-- <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item> -->
+        <item name="material_drawer_secondary_text">@color/secondary_text</item>
+        <!-- <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item> -->
+        <item name="material_drawer_divider">@color/divider</item>
+        <!--<item name="material_drawer_selected">@color/accent</item> -->
+        <item name="material_drawer_selected_text">@color/accent</item>
+        <!-- <item name="material_drawer_header_selection_text">@color/accent</item> -->
+
+    </style>
+
+    <style name="ToolbarBottom" parent="Theme.MyTheme">
+        <item name="colorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_clicked</item>
+        <item name="android:textColor">@drawable/font_enabled</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColorHint">@color/secondary_text</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+</resources>

@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">LPC-v2</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Login -->
+    <string name="activity_login_title">Login</string>
+    <string name="edt_login_hint">Login</string>
+    <string name="edt_password_hint">Senha</string>
+    <string name="btn_login">ENTRAR</string>
+    <string name="btn_forgot_password">ESQUECI MINHA SENHA</string>
+
+    <!-- Processos -->
+    <string name="title_activity_processos">Processos</string>
+    <string name="item_drawer_new_process">Novo Processo</string>
+
+    <!-- Novo Processo -->
+    <string name="title_activity_novo_processo">Novo Caso</string>
+    <string name="edt_num_processo_hint">Número do Processo</string>
+    <string name="item_assunto_divorcio">Divórcio</string>
+    <string name="item_assunto_guarda">Guarda</string>
+    <string name="item_assunto_pensao">Pensão alimentícia</string>
+    <string name="item_assunto_Mudança_de_guarda">Mudança de Guarda</string>
+    <string name="edt_interessado_hint">Interessado</string>
+    <string name="txt_assunto">Assunto:</string>
+    <string name="radio_interessado">Interessado</string>
+    <string name="radio_crianca">Criança</string>
+    <string name="btn_remove_item">Remover</string>
+
+    <!-- Agendamento de Atendimentos -->
+    <string name="title_activity_agendar">Agendamento de Atendimentos</string>
+    <string name="chb_intervencao_breve">Intervenção Breve</string>
+    <string name="chb_atendimento_ludico">Atendimento Infantil</string>
+    <string name="txt_atendimento_ludico">Data e Hora:</string>
+    <string name="txt_atendimento_piscicossocial">Data e Hora de Atendimento Piscicossocial:</string>
+    <string name="btn_DH_audiencia_final">Data e Hora da Audiência Final</string>
+    <string name="btn_DH_Atendimento_PSI">Atendimento PsicoSocial</string>
+    <string name="btn_DH_Atendimento_Ludico">Atendimento Infantil</string>
+    <string name="btn_finalizar_agendamento">Finalizar Agendamento</string>
+
+    <!-- Processo -->
+    <string name="title_activity_processo">Processo</string>
+    <string name="btn_more_information">Mais Informações</string>
+    <string name="btn_menos_informacoes">Menos Informações</string>
+    <string name="btn_reagendar">Reagendar</string>
+    <string name="btn_atualizar_status">Atualizar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_data_nascimento">Data de Nascimento</string>
+    <string name="edt_escola">Escola</string>
+    <string name="edt_serie">Série</string>
+    <string name="btn_atualizar">Atualizar</string>
+    <string name="edt_endereco">Endereço</string>
+    <string name="edt_telefone">Telefone</string>
+    <string name="item_drawer_exit">Sair</string>
+
+    <!-- Inicial -->
+    <string name="title_activity_inicial">Tela Inicial</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="item_drawer_processes">Processos</string>
+    <string name="title_activity_nova_atividade">NovaAtividadeActivity</string>
+    <string name="txt_tipo_atividade">Tipo de Atividade</string>
+
+    <!-- Nova Atividade -->
+    <string name="item_tipo_atividade_atendimento">Atendimento</string>
+    <string name="item_tipo_atividade_visita">Visita</string>
+    <string name="btn_TipoAtividade1">Nova Visita</string>
+    <string name="btn_TipoAtividade2">Novo Atendimento</string>
+
+    <!-- Frag Atendimento-->
+    <string name="btn_finalizar_atendimento">Finalizar Atendimento</string>
+
+    <!-- Frag Visita-->
+    <string name="btn_DH_Visita">Visita Domiciliar</string>
+    <string name="btn_finalizar_visita">Finalizar Visita</string>
+
+    <!-- Frag Atualizar Atividade-->
+    <string name="item_status_atividade_aberto">aberta</string>
+    <string name="item_status_atividade_finalizado">finalizada</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>

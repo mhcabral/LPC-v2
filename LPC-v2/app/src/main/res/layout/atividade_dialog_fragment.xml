@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtReagendar"/>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnReagendar"
+        android:text="@string/btn_reagendar"
+        style="@style/buttonStyle"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado da Atividade"/>
+
+    <Spinner
+        android:layout_marginTop="16dp"
+        android:id="@+id/spnNewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnAtualizarStatus"
+        android:text="@string/btn_atualizar_status"
+        style="@style/buttonStyle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:text="@string/btn_cancelar"
+            style="@style/buttonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
